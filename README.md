@@ -40,6 +40,6 @@ This API can be integrated into a web interface or a chatbot where users can inp
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-policy-search.git
+   git clone https://github.com/OldAlexhub/smartsearchAPI.git
    cd ai-policy-search
    ```
