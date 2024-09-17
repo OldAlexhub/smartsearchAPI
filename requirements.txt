@@ -1,7 +1,8 @@
-flask
+Flask
 flask-cors
 pandas
 pymongo
 fuzzywuzzy
 transformers
 gunicorn
+python-dotenv
