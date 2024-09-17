@@ -7,3 +7,4 @@ transformers
 gunicorn
 python-dotenv
 python-Levenshtein
+torch
