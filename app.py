@@ -9,10 +9,13 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Load environment variables (only in development)
+# Load environment variables only in development mode
 if os.environ.get("FLASK_ENV") != "production":
-    from dotenv import load_dotenv
-    load_dotenv()
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ModuleNotFoundError:
+        print("python-dotenv not installed, skipping load_dotenv")
     
 # MongoDB setup
 mongo_url = os.getenv('MONGO_URL')
